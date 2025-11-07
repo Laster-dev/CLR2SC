@@ -5,6 +5,7 @@
 ## ✨ 亮点特性
 
 ### 🌐 在线使用
+- **您可访问此链接直接使用**：[点击使用]([https://markdown.com.cn](https://laster-dev.github.io/CLR2SC/))
 - **纯前端实现**：无需安装任何软件，直接在浏览器中打开即可使用
 - **本地处理**：所有操作在本地完成，文件不会上传到服务器，保护隐私安全
 - **跨平台支持**：支持 Windows、macOS、Linux 等所有现代浏览器
@@ -68,5 +69,6 @@ byte[] shellcode={
 ## 🙏 致谢
 
 基于 CLRvoyance 项目改造，提供更便捷的 Web 界面。
+
 
 
