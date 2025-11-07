@@ -286,8 +286,8 @@
                         <div class="drop-zone-content">
                             <div class="drop-icon">📁</div>
                             <p class="drop-text">拖拽文件到此处或 <span class="drop-link">点击选择</span></p>
-                            <p class="drop-hint">支持 .exe 和 .dll 文件</p>
-                            <input type="file" id="assemblyFile" accept=".exe,.dll" style="display: none;">
+                            <p class="drop-hint">支持 .exe 文件</p>
+                            <input type="file" id="assemblyFile" accept=".exe" style="display: none;">
                             <div class="file-info" id="fileInfo" style="display: none;">
                                 <span class="file-name" id="fileName"></span>
                                 <span class="file-size" id="fileSize"></span>
@@ -392,11 +392,11 @@
                 const files = e.dataTransfer.files;
                 if (files && files.length > 0) {
                     const file = files[0];
-                    if (file.name.endsWith('.exe') || file.name.endsWith('.dll')) {
+                    if (file.name.endsWith('.exe')) {
                         fileInput.files = files;
                         handleFileSelect(file);
                     } else {
-                        alert('请选择 .exe 或 .dll 文件');
+                        alert('请选择 .exe 文件');
                     }
                 }
             });
@@ -659,4 +659,5 @@
     </script>
 </body>
 </html>
+
 
