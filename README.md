@@ -24,24 +24,7 @@
 - ✅ 现代化暗黑风格 UI
 - ✅ 实时生成，即时下载
 
-## 📖 使用方法
 
-### 1. 配置 Shellcode Base64
-
-打开 `clrvoyance.html` 文件，在代码中找到以下配置区域：
-
-```javascript
-const SHELLCODE_BASE64 = {
-    'sc-32-clr': '',           // 请填写 sc-32-clr 的 Base64 编码
-    'sc-64-clr': '',           // 请填写 sc-64-clr 的 Base64 编码
-    'sc-32-clr-apc': '',       // 请填写 sc-32-clr-apc 的 Base64 编码
-    'sc-32-clrnd': '',         // 请填写 sc-32-clrnd 的 Base64 编码
-    'sc-32-clrnd-apc': '',     // 请填写 sc-32-clrnd-apc 的 Base64 编码
-    'sc-64-clrnd': ''          // 请填写 sc-64-clrnd 的 Base64 编码
-};
-```
-
-将对应的 shellcode 文件转换为 Base64 编码后填入。
 
 ### 2. 使用工具
 
@@ -78,21 +61,6 @@ byte[] shellcode={
 };
 ```
 
-## 🔧 技术实现
-
-- **前端技术**：纯 HTML + JavaScript，无需后端服务器
-- **文件处理**：使用 FileReader API 读取文件
-- **Base64 解码**：浏览器原生 atob() 函数
-- **二进制操作**：Uint8Array 进行字节级操作
-- **文件下载**：Blob API + 临时链接下载
-
-## ⚠️ 注意事项
-
-1. **Shellcode 配置**：使用前必须先在代码中配置好所有 shellcode 的 Base64 编码
-2. **文件格式**：仅支持 .NET 程序集文件（.exe 或 .dll）
-3. **浏览器兼容性**：需要支持 ES6+ 的现代浏览器
-4. **用途说明**：本工具仅用于合法的安全研究和授权测试
-
 ## 📄 许可证
 
 请参考原项目许可证。
@@ -100,4 +68,5 @@ byte[] shellcode={
 ## 🙏 致谢
 
 基于 CLRvoyance 项目改造，提供更便捷的 Web 界面。
+
 
